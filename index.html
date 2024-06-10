@@ -106,39 +106,32 @@
     margin: 0;
     padding: 0;
 
-    > .hero {
+    .block {
+      background: white;
       height: 100svh;
-      width: 100vw;
-      position: relative;
+      width: 100%;
       padding: 0;
-      overflow: hidden;
+      position: relative;
 
-      > .video {
+      .video,
+      .img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        aspect-ratio: auto;
-
-        @media screen and (min-width: 768px) {
-          object-fit: cover;
-        }
       }
 
-      .heroTitle {
+      .headings {
         z-index: 5;
         position: absolute;
         left: 50%;
-        transform: translate(-50%, 0%);
+        transform: translateX(-50%);
         color: #fff;
+        font-size: 12px;
         text-align: center;
         bottom: 60px;
         width: fit-content;
         line-height: 15.6px;
         text-transform: uppercase;
-
-        * {
-          font-size: 12px;
-        }
 
         .subtitle {
           font-weight: 400;
@@ -148,54 +141,10 @@
           font-weight: 700;
         }
       }
-
-      > .video {
-        margin: auto;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    > section {
-      overflow: hidden !important;
-      background: white;
-      height: 100svh;
-      width: 100%;
-      padding: 0;
-      position: relative;
-      /* top: 0;
-      left: 0; */
-      transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
-        opacity 0.5s 0.2s linear;
-
-      > .video {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      &:nth-child(1) {
-        transform: translateY(0);
-        opacity: 1;
-      }
-
-      //transform: translateY(100%);
-      opacity: 1;
-    }
-
-    .active {
-      transform: translateY(0) !important;
-      opacity: 1 !important;
-    }
-
-    .isPrev {
-      transform: translateY(-10%) !important;
-      opacity: 0 !important;
     }
 
     .intro {
-      max-width: 525px;
+      max-width: 617px;
       margin: auto;
       width: calc(100% - 40px);
       height: 100lvh;
@@ -203,7 +152,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      line-height: 15.6px;
+      line-height: 14px;
       font-size: 12px;
 
       > .title {
@@ -217,149 +166,116 @@
         text-align: left;
       }
     }
-
-    .slide {
-      height: 100lvh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      > .container {
-        height: auto;
-        width: calc(100% - 40px);
-
-        @media screen and (min-width: 768px) {
-          width: 100%;
-          max-width: 402px;
-        }
-
-        > img {
-          margin: auto;
-          padding-bottom: 16px;
-        }
-
-        > .headings {
-          margin: auto;
-          text-align: center;
-          line-height: 15.6px;
-
-          * {
-            font-size: 12px;
-          }
-
-          div {
-            font-weight: 700;
-          }
-
-          p,
-          a {
-            font-weight: 400;
-          }
-        }
-      }
-    }
   }
 </style>
-<div class="main">
-  <section class="block hero">
-    <video
-      class="video"
-      src="https://storage.googleapis.com/free-templates/cannes/images/hero.mp4"
-      loop
-      autoplay
-      muted
-      playsinline
-    ></video>
-    <div class="heroTitle">
-      <a
-        href="https://content-re.ysl.com/fr-fr/cp/pedro-almodovar"
-        class="wrapper"
-      >
-        <div class="bold">SAINT LAURENT PRODUCTIONS PRESENTS</div>
-        <p class="subtitle">STRANGE WAY OF LIFE</p>
-        <p class="subtitle">A FILM BY PEDRO ALMODÓVAR</p>
+<body>
+  <div class="main">
+    <section
+      class="block"
+      data-headercolordesktop=""
+      data-headercolortablet=""
+      data-headercolormobile=""
+    >
+      <a href="https://content-re.ysl.com/fr-fr/cp/pedro-almodovar">
+        <video
+          class="video"
+          src="https://storage.googleapis.com/free-templates/cannes/images/hero.mp4"
+          loop
+          autoplay
+          muted
+          playsinline
+        ></video>
+        <div class="headings">
+          <div class="bold">SAINT LAURENT PRODUCTIONS PRESENTS</div>
+          <p class="subtitle">STRANGE WAY OF LIFE</p>
+          <p class="subtitle">A FILM BY PEDRO ALMODÓVAR</p>
+        </div>
       </a>
-    </div>
-  </section>
-  <section class="block">
-    <div class="intro">
-      <div class="bold title">SAINT LAURENT PRODUCTIONS</div>
-      <p>
-        SAINT LAURENT PRODUCTIONS IS PROUD TO ANNOUNCE THREE LONG FEATURED FILMS
-        IN COMPETITION IN THE 2024 OFFICIAL SELECTION OF THE 77TH EDITION OF THE
-        CANNES FILM FESTIVAL: «EMILIA PEREZ» BY JACQUES AUDIARD, «THE SHROUDS»
-        BY DAVID CRONENBERG AND «PARTHENOPE» BY PAOLO SORRENTINO.
-      </p>
-      <br />
-      <p>
-        SAINT LAURENT PRODUCTIONS IS A REGISTERED SUBSIDIARY OF THE HOUSE, MARKS
-        THE FIRST FASHION HOUSE TO COUNT THE FULL-FLEDGED PRODUCTION OF FILMS
-        AMONG ITS ACTIVITIES. THE DIVISION, ENVISIONED BY ANTHONY VACCARELLO FOR
-        SAINT LAURENT, IS IN LINE WITH VACCARELLO’S ASSURED STEERING OF THE
-        BRAND INTO THE FUTURE, WHILE ECHOING THE CINEMATIC BREADTH AND NUANCES
-        OF HIS COLLECTIONS.
-      </p>
-    </div>
-  </section>
-  <section class="block">
-    <div class="container">
-      <a
-        href="https://content-re.ysl.com/cp/emilia-perez"
-        style="display: block; margin-bottom: 10px"
-      >
+    </section>
+    <section
+      class="block"
+      data-headercolordesktop=""
+      data-headercolortablet=""
+      data-headercolormobile=""
+    >
+      <div class="intro">
+        <div class="bold title">SAINT LAURENT PRODUCTIONS</div>
+        <p>
+          SAINT LAURENT PRODUCTIONS IS PROUD TO ANNOUNCE THREE LONG FEATURED
+          FILMS IN COMPETITION IN THE 2024 OFFICIAL SELECTION OF THE 77TH
+          EDITION OF THE CANNES FILM FESTIVAL: «EMILIA PEREZ» BY JACQUES
+          AUDIARD, «THE SHROUDS» BY DAVID CRONENBERG AND «PARTHENOPE» BY PAOLO
+          SORRENTINO.
+        </p>
+        <br />
+        <p>
+          SAINT LAURENT PRODUCTIONS IS A REGISTERED SUBSIDIARY OF THE HOUSE,
+          MARKS THE FIRST FASHION HOUSE TO COUNT THE FULL-FLEDGED PRODUCTION OF
+          FILMS AMONG ITS ACTIVITIES. THE DIVISION, ENVISIONED BY ANTHONY
+          VACCARELLO FOR SAINT LAURENT, IS IN LINE WITH VACCARELLO’S ASSURED
+          STEERING OF THE BRAND INTO THE FUTURE, WHILE ECHOING THE CINEMATIC
+          BREADTH AND NUANCES OF HIS COLLECTIONS.
+        </p>
+      </div>
+    </section>
+    <section
+      class="block"
+      data-headercolordesktop=""
+      data-headercolortablet=""
+      data-headercolormobile=""
+    >
+      <a href="https://content-re.ysl.com/cp/emilia-perez">
         <img
+          class="img"
           src="https://storage.googleapis.com/free-templates/cannes/images/Cover-1.jpg"
+          alt=""
         />
-      </a>
-
-      <div class="headings">
-        <a href="https://content-re.ysl.com/cp/emilia-perez">
+        <div class="headings">
           <div class="bold">emilia perez</div>
           <p>directed by jacques audiard</p>
           <p>sélection officielle cannes 2024</p>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="block">
-    <div class="container">
-      <a
-        href="https://content-re.ysl.com/the-shrouds"
-        style="display: block; margin-bottom: 10px"
-      >
-        <img
-          src="https://storage.googleapis.com/free-templates/cannes/images/cover-2.jpg"
-        />
+        </div>
       </a>
+    </section>
+    <section
+      class="block"
+      data-headercolordesktop=""
+      data-headercolortablet=""
+      data-headercolormobile=""
+    >
+      <a href="https://content-re.ysl.com/the-shrouds">
+        <img
+          class="img"
+          src="https://storage.googleapis.com/free-templates/cannes/images/cover-2.jpg"
+          alt=""
+        />
 
-      <div class="headings">
-        <a href="https://content-re.ysl.com/the-shrouds">
+        <div class="headings">
           <div class="bold">the shrouds</div>
           <p>directed by david cronenberg</p>
           <p>sélection officielle cannes 2024</p>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section class="block">
-    <div class="container">
-      <a
-        href="https://content-re.ysl.com/cp/parthenope"
-        style="display: block; margin-bottom: 10px"
-      >
-        <img
-          src="https://storage.googleapis.com/free-templates/cannes/images/cover-3.jpg"
-        />
+        </div>
       </a>
+    </section>
+    <section
+      class="block"
+      data-headercolordesktop=""
+      data-headercolortablet=""
+      data-headercolormobile=""
+    >
+      <a href="https://content-re.ysl.com/cp/parthenope">
+        <img
+          class="img"
+          src="https://storage.googleapis.com/free-templates/cannes/images/cover-3.jpg"
+          alt=""
+        />
 
-      <div class="headings">
-        <a href="https://content-re.ysl.com/cp/parthenope">
+        <div class="headings">
           <div class="bold">PARTHENOPE</div>
           <p>DIRECTED BY PAOLO SORRENTINO</p>
           <p>SELECTION OFFICIELLE CANNES 2024</p>
-        </a>
-      </div>
-    </div>
-  </section>
-</div>
+        </div>
+      </a>
+    </section>
+  </div>
+</body>
