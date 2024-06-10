@@ -1,186 +1,146 @@
 <style type="text/css">
-  .main {
-    font-family: Helvetica_Regular, Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-weight: 400;
-    color: black;
-    background-color: black;
-    line-height: 130%;
-    font-style: normal;
-    overscroll-behavior-y: none;
-    -webkit-overflow-scrolling: touch;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    text-rendering: optimizeSpeed;
-    scrollbar-gutter: stable;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    overscroll-behavior: none;
-    -ms-user-select: none;
-    z-index: 0;
-    position: relative;
-
-    .bold {
-      font-family: Helvetica_Bold, Helvetica, Arial, sans-serif;
-      font-weight: 700;
-    }
-
-    *,
-    *::before,
-    *::after {
-      box-sizing: border-box;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    p,
-    figure,
-    blockquote,
-    dl,
-    dd {
-      margin: 0;
-    }
-
-    ul[role="list"],
-    ol[role="list"] {
-      list-style: none;
-    }
-
-    a:not([class]) {
-      text-decoration-skip-ink: auto;
-    }
-
-    /* Make images easier to work with */
-
-    img,
-    picture {
-      max-width: 100%;
-      display: block;
-    }
-
-    input,
-    button,
-    textarea,
-    select {
-      font: inherit;
-    }
-
-    /* List styles*/
-
-    ul,
-    ol {
-      padding: unset;
-
-      li {
-        list-style: none;
-      }
-    }
-
-    button {
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      display: block;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    font-family: Helvetica, sans-serif;
-    /* height: 100svh;
-    overflow: hidden !important; */
-    margin: 0;
-    padding: 0;
-
-    .block {
-      background: white;
-      height: 100vh;
-      height: 100svh;
-      width: 100%;
-      padding: 0;
-      position: relative;
-
-      .video,
-      .img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      .headings {
-        z-index: 5;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        font-size: 12px;
-        text-align: center;
-        bottom: 60px;
-        width: fit-content;
-        line-height: 15.6px;
-        text-transform: uppercase;
-
-        .subtitle {
-          font-weight: 400;
-        }
-
-        .bold {
-          font-weight: 700;
-        }
-      }
-    }
-
-    .intro {
-      max-width: 617px;
-      margin: auto;
-      width: calc(100% - 40px);
-      height: 100vh;
-      height: 100lvh;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      line-height: 14px;
-      font-size: 12px;
-
-      > .title {
-        font-weight: 700;
-        text-align: left;
-        margin-bottom: 32px;
-      }
-
-      p {
-        font-weight: 400;
-        text-align: left;
-      }
-    }
-
-    @media (min-width: 769px) {
-      .mobile {
-        display: none;
-      }
-    }
-    @media (max-width: 768px) {
-      .desktop {
-        display: none;
-      }
-    }
-  }
+.main {
+	 font-family: Helvetica_Regular, Helvetica, Arial, sans-serif;
+	 font-size: 11px;
+	 text-transform: uppercase;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+	 font-weight: 400;
+	 color: black;
+	 background-color: black;
+	 line-height: 130%;
+	 font-style: normal;
+	 overscroll-behavior-y: none;
+	 -webkit-overflow-scrolling: touch;
+	 -webkit-text-size-adjust: 100%;
+	 -webkit-tap-highlight-color: transparent;
+	 -webkit-touch-callout: none;
+	 text-rendering: optimizeSpeed;
+	 scrollbar-gutter: stable;
+	 -webkit-user-select: none;
+	 -moz-user-select: none;
+	 user-select: none;
+	 overscroll-behavior: none;
+	 -ms-user-select: none;
+	 z-index: 0;
+	 position: relative;
+	/* Make images easier to work with */
+	/* List styles*/
+	 font-family: Helvetica, sans-serif;
+	/* height: 100svh;
+	 overflow: hidden !important;
+	 */
+	 margin: 0;
+	 padding: 0;
+}
+ .main .bold {
+	 font-family: Helvetica_Bold, Helvetica, Arial, sans-serif;
+	 font-weight: 700;
+}
+ .main *, .main *::before, .main *::after {
+	 box-sizing: border-box;
+}
+ .main h1, .main h2, .main h3, .main h4, .main p, .main figure, .main blockquote, .main dl, .main dd {
+	 margin: 0;
+}
+ .main ul[role="list"], .main ol[role="list"] {
+	 list-style: none;
+}
+ .main a:not([class]) {
+	 text-decoration-skip-ink: auto;
+}
+ .main img, .main picture {
+	 max-width: 100%;
+	 display: block;
+}
+ .main input, .main button, .main textarea, .main select {
+	 font: inherit;
+}
+ .main ul, .main ol {
+	 padding: unset;
+}
+ .main ul li, .main ol li {
+	 list-style: none;
+}
+ .main button {
+	 border: none;
+	 background: none;
+	 cursor: pointer;
+}
+ .main a {
+	 color: inherit;
+	 text-decoration: none;
+	 display: block;
+}
+ .main img {
+	 max-width: 100%;
+	 display: block;
+}
+ .main .block {
+	 background: white;
+	 height: 100vh;
+	 height: 100svh;
+	 width: 100%;
+	 padding: 0;
+	 position: relative;
+}
+ .main .block .video, .main .block .img {
+	 height: 100%;
+	 width: 100%;
+	 object-fit: cover;
+}
+ .main .block .headings {
+	 z-index: 5;
+	 position: absolute;
+	 left: 50%;
+	 transform: translateX(-50%);
+	 color: #fff;
+	 font-size: 12px;
+	 text-align: center;
+	 bottom: 60px;
+	 width: fit-content;
+	 line-height: 15.6px;
+	 text-transform: uppercase;
+}
+ .main .block .headings .subtitle {
+	 font-weight: 400;
+}
+ .main .block .headings .bold {
+	 font-weight: 700;
+}
+ .main .intro {
+	 max-width: 617px;
+	 margin: auto;
+	 width: calc(100% - 40px);
+	 height: 100vh;
+	 height: 100lvh;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 line-height: 14px;
+	 font-size: 12px;
+}
+ .main .intro > .title {
+	 font-weight: 700;
+	 text-align: left;
+	 margin-bottom: 32px;
+}
+ .main .intro p {
+	 font-weight: 400;
+	 text-align: left;
+}
+ @media (min-width: 769px) {
+	 .main .mobile {
+		 display: none;
+	}
+}
+ @media (max-width: 768px) {
+	 .main .desktop {
+		 display: none;
+	}
+}
+ 
 </style>
 <div class="main">
   <section
